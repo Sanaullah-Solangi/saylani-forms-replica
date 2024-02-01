@@ -1,0 +1,59 @@
+@media (width <= 965px) {
+  html {
+    font-size: 52.5%;
+  }
+  form > div,
+  .description {
+    padding: 0rem;
+  }
+}
+@media (width <= 880px) {
+  .idCard div {
+    width: 80%;
+  }
+}
+@media (width <= 805px) {
+  .header .logo img {
+    width: 30rem;
+  }
+  .header-content .main-heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (width <= 730px) {
+  .header-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .header-content .main-heading {
+    order: -1;
+  }
+  .dbl-items {
+    grid-template-columns: 1fr;
+    gap: 0rem;
+  }
+  .idCard div {
+    width: 100%;
+  }
+}
+@media (width <= 560px) {
+  .saylani-form-clone {
+    padding: 0 3rem 15rem;
+  }
+}
+
+@media (width <= 450px) {
+  html {
+    font-size: 42.5%;
+  }
+
+  .unq-dbl-items {
+    flex-direction: column;
+    height: auto;
+    gap: 0rem;
+  }
+  .my-logo {
+    width: 4.5rem;
+  }
+}

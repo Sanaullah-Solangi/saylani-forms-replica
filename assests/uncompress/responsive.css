@@ -1,0 +1,115 @@
+@media (width <= 1160px) {
+  .section,
+  .header-section,
+  #home {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (width <= 1050px) {
+  html {
+    font-size: 52.5%;
+  }
+
+  #about .grid-two-columns {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+  }
+  .grid-three-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width <= 750px) {
+  .navbar a {
+    padding: 0rem 1rem;
+    font-size: 1.6rem;
+  }
+  form {
+    width: 90%;
+  }
+}
+
+@media (width <= 650px) {
+  .navbar {
+    position: fixed;
+    left: 0;
+    top: -100%;
+    height: 100%;
+    width: 100%;
+    background: var(--hover-color);
+    flex-direction: column;
+    opacity: 0%;
+    transition: all 300ms ease-in;
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+  }
+
+  .show .navbar {
+    top: 7rem;
+    opacity: 1;
+  }
+  #menuBar {
+    display: block;
+  }
+  .show .responsive-icons #menuBar {
+    display: none;
+  }
+  .show .responsive-icons #closeIcon {
+    display: block;
+  }
+}
+
+.navbar a {
+  width: 100%;
+  padding: 0px 1rem;
+  height: 50%;
+  font-size: 2.5rem;
+}
+
+@media (width <= 570px) {
+  #home {
+    padding-bottom: 5rem;
+  }
+
+  .home-image img {
+    width: 50rem;
+    height: 50rem;
+  }
+  .section,
+  .section-fluid {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+  .grid-two-columns {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .grid-three-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .home-content,
+  p {
+    text-align: center;
+  }
+  .contact-container .grid {
+    gap: 0rem;
+  }
+}
+
+@media (width <= 500px) {
+  .home-image img,
+  .about-image img {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  form {
+    width: 100%;
+  }
+}
